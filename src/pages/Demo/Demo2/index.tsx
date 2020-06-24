@@ -5,13 +5,13 @@ const Demo2: FC<RouteComponentProps> = ({ history, location }) => {
   // const history = useHistory();
   // const location = useLocation();
   function handleClick() {
-    history.push({ pathname: '/login', state: { from: location } });
+    history.push({ pathname: '/', state: { from: location } });
   }
   return (
     <div>
       <a>Demo2</a>
       <button type="button" onClick={handleClick}>
-        Go Login
+        Go Home
       </button>
     </div>
   );

@@ -73,7 +73,8 @@ module.exports = () => {
     resolve: {
       extensions: ['.tsx', '.ts', '.js', '.json'],
       alias: {
-        '@/': '../src',
+        // src: path.resolve(__dirname, './src'),
+        actions: path.resolve(__dirname, './store/actions'),
       },
     },
     // 模块

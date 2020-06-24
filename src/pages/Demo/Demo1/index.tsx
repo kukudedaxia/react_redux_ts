@@ -1,10 +1,9 @@
-import React from 'react';
-import { useHistory } from 'react-router-dom';
+import React, { FC } from 'react';
+import { RouteComponentProps } from 'react-router';
 
-const Demo1 = () => {
-  const history = useHistory();
+const Demo1: FC<RouteComponentProps> = ({ history }) => {
   function handleClick() {
-    history.push('/demo/demo2');
+    history.push({ pathname: '/demo/demo2' });
   }
   return (
     <div>
